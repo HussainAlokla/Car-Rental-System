@@ -1,4 +1,9 @@
 
+package Classes;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class DatabaseConnection {
     // Database credentials
     private static final String URL = "jdbc:mysql://localhost:3306/car_rental_system"; // Replace with your DB URL

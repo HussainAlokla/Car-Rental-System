@@ -26,7 +26,6 @@ public class ManageUsers extends javax.swing.JFrame {
         // Group the radio buttons
         roleButtonGroup = new ButtonGroup();
         roleButtonGroup.add(adminRadioButton);
-        roleButtonGroup.add(staffRadioButton);
         roleButtonGroup.add(customerRadioButton);
         
         displayAdminStaffUsers();
@@ -49,8 +48,6 @@ public class ManageUsers extends javax.swing.JFrame {
     private String getSelectedRole() {
         if (adminRadioButton.isSelected()) {
             return "Admin";
-        } else if (staffRadioButton.isSelected()) {
-            return "Staff";
         } else {
             return "Customer";
         }
@@ -126,8 +123,6 @@ public class ManageUsers extends javax.swing.JFrame {
         // Set the appropriate radio button for the role
         if (role.equalsIgnoreCase("Admin")) {
             adminRadioButton.setSelected(true);
-        } else if (role.equalsIgnoreCase("Staff")) {
-            staffRadioButton.setSelected(true);
         }
     }
 }
@@ -176,7 +171,6 @@ public class ManageUsers extends javax.swing.JFrame {
         addUserButton = new javax.swing.JButton();
         updateUserButton = new javax.swing.JButton();
         deleteUserButton = new javax.swing.JButton();
-        staffRadioButton = new javax.swing.JRadioButton();
         adminRadioButton = new javax.swing.JRadioButton();
         customerRadioButton = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
@@ -248,11 +242,6 @@ public class ManageUsers extends javax.swing.JFrame {
             }
         });
 
-        staffRadioButton.setBackground(new java.awt.Color(185, 229, 232));
-        staffRadioButton.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
-        staffRadioButton.setForeground(new java.awt.Color(74, 98, 138));
-        staffRadioButton.setText("Staff");
-
         adminRadioButton.setBackground(new java.awt.Color(185, 229, 232));
         adminRadioButton.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
         adminRadioButton.setForeground(new java.awt.Color(74, 98, 138));
@@ -321,7 +310,7 @@ public class ManageUsers extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Segoe UI Light", 1, 36)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(74, 98, 138));
-        jLabel8.setText("Admin & Staff");
+        jLabel8.setText("Admin");
 
         jLabel9.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(74, 98, 138));
@@ -345,9 +334,7 @@ public class ManageUsers extends javax.swing.JFrame {
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(adminRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(staffRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(customerRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -404,8 +391,8 @@ public class ManageUsers extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(110, 110, 110)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(537, Short.MAX_VALUE)))
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(627, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -445,7 +432,6 @@ public class ManageUsers extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
                             .addComponent(adminRadioButton)
-                            .addComponent(staffRadioButton)
                             .addComponent(customerRadioButton))
                         .addGap(59, 59, 59)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -464,7 +450,7 @@ public class ManageUsers extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(294, 294, 294)
                     .addComponent(jLabel8)
-                    .addContainerGap(316, Short.MAX_VALUE)))
+                    .addContainerGap(319, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -716,7 +702,6 @@ public class ManageUsers extends javax.swing.JFrame {
     private javax.swing.JTextField passwordTextField;
     private javax.swing.JTextField phoneTextField;
     private javax.swing.ButtonGroup roleButtonGroup;
-    private javax.swing.JRadioButton staffRadioButton;
     private javax.swing.JButton updateUserButton;
     private javax.swing.JTextField usernameTextField;
     // End of variables declaration//GEN-END:variables
