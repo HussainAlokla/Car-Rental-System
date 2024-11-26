@@ -8,6 +8,15 @@ import Classes.UserService;
 import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
+
+/**
+ *
+ * @author mk225
+ */
 public class login extends javax.swing.JFrame {
     private Connection connection;
     /**
@@ -17,8 +26,7 @@ public class login extends javax.swing.JFrame {
     public login(Connection connection) {
         this.connection = connection;
         initComponents();
-        roleButtonGroup.add(adminRadioButton);
-        roleButtonGroup.add(staffRadioButton);
+        roleButtonGroup.add(adminRadioButton); 
         roleButtonGroup.add(customerRadioButton);
     }
 
@@ -43,11 +51,11 @@ public class login extends javax.swing.JFrame {
         passwordField = new javax.swing.JPasswordField();
         loginButton = new javax.swing.JButton();
         adminRadioButton = new javax.swing.JRadioButton();
-        staffRadioButton = new javax.swing.JRadioButton();
         customerRadioButton = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator1 = new javax.swing.JSeparator();
+        loginButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,7 +76,7 @@ public class login extends javax.swing.JFrame {
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LeftPanelLayout.createSequentialGroup()
-                .addContainerGap(38, Short.MAX_VALUE)
+                .addContainerGap(44, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(36, 36, 36))
         );
@@ -127,11 +135,6 @@ public class login extends javax.swing.JFrame {
         adminRadioButton.setForeground(new java.awt.Color(74, 98, 138));
         adminRadioButton.setText("Admin");
 
-        staffRadioButton.setBackground(new java.awt.Color(185, 229, 232));
-        staffRadioButton.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
-        staffRadioButton.setForeground(new java.awt.Color(74, 98, 138));
-        staffRadioButton.setText("Staff");
-
         customerRadioButton.setBackground(new java.awt.Color(185, 229, 232));
         customerRadioButton.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
         customerRadioButton.setForeground(new java.awt.Color(74, 98, 138));
@@ -145,6 +148,16 @@ public class login extends javax.swing.JFrame {
 
         jSeparator1.setForeground(new java.awt.Color(223, 242, 235));
 
+        loginButton1.setBackground(new java.awt.Color(122, 178, 211));
+        loginButton1.setFont(new java.awt.Font("Segoe UI Light", 1, 24)); // NOI18N
+        loginButton1.setForeground(new java.awt.Color(74, 98, 138));
+        loginButton1.setText("Forgot Password");
+        loginButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout RightPanelLayout = new javax.swing.GroupLayout(RightPanel);
         RightPanel.setLayout(RightPanelLayout);
         RightPanelLayout.setHorizontalGroup(
@@ -155,33 +168,31 @@ public class login extends javax.swing.JFrame {
                         .addGap(156, 156, 156)
                         .addComponent(jLabel4))
                     .addGroup(RightPanelLayout.createSequentialGroup()
-                        .addGap(32, 32, 32)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(RightPanelLayout.createSequentialGroup()
-                                .addComponent(adminRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(staffRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(customerRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(RightPanelLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addGroup(RightPanelLayout.createSequentialGroup()
-                                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(0, 0, Short.MAX_VALUE)
-                                            .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(RightPanelLayout.createSequentialGroup()
-                                            .addComponent(jLabel1)
-                                            .addGap(32, 32, 32)
-                                            .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(usernameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                            .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(RightPanelLayout.createSequentialGroup()
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(0, 0, Short.MAX_VALUE)
+                                    .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(RightPanelLayout.createSequentialGroup()
+                                    .addComponent(jLabel1)
+                                    .addGap(32, 32, 32)
+                                    .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(usernameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(25, 25, 25))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RightPanelLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(loginButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(RightPanelLayout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(adminRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(customerRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(81, 81, 81))
         );
         RightPanelLayout.setVerticalGroup(
@@ -208,11 +219,12 @@ public class login extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(customerRadioButton)
-                    .addComponent(staffRadioButton)
                     .addComponent(adminRadioButton))
                 .addGap(49, 49, 49)
                 .addComponent(loginButton)
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(loginButton1)
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         usernameTextField.getAccessibleContext().setAccessibleName("usernameTextField");
@@ -223,9 +235,8 @@ public class login extends javax.swing.JFrame {
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MainPanelLayout.createSequentialGroup()
                 .addComponent(LeftPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(RightPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(RightPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -247,6 +258,11 @@ public class login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void loginButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButton1ActionPerformed
+        // TODO add your handling code here:
+        new RecoverPasswordForm(connection).setVisible(true);
+    }//GEN-LAST:event_loginButton1ActionPerformed
+
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         // TODO add your handling code here:
         String username = usernameTextField.getText();
@@ -263,16 +279,6 @@ public class login extends javax.swing.JFrame {
                 this.dispose();
             } else {
                 JOptionPane.showMessageDialog(this, "Invalid Admin credentials.");
-            }
-        } else if (staffRadioButton.isSelected()) {
-            // Authenticate as Staff
-            if (userService.authenticateUser(username, password, "Staff")) {
-                JOptionPane.showMessageDialog(this, "Login Successful as Staff!");
-                StaffDashboard staffDashboard = new StaffDashboard();
-                staffDashboard.setVisible(true);
-                this.dispose();
-            } else {
-                JOptionPane.showMessageDialog(this, "Invalid Staff credentials.");
             }
         } else if (customerRadioButton.isSelected()) {
             // Authenticate as Customer
@@ -304,13 +310,13 @@ public class login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_loginButtonActionPerformed
 
-    private void usernameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_usernameTextFieldActionPerformed
-
     private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_passwordFieldActionPerformed
+
+    private void usernameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usernameTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -361,9 +367,9 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JButton loginButton;
+    private javax.swing.JButton loginButton1;
     private javax.swing.JPasswordField passwordField;
     private javax.swing.ButtonGroup roleButtonGroup;
-    private javax.swing.JRadioButton staffRadioButton;
     private javax.swing.JTextField usernameTextField;
     // End of variables declaration//GEN-END:variables
 }
