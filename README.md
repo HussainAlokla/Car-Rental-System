@@ -159,8 +159,26 @@ The system is built using a layered architecture:
 #### Login and Authentication
 ![Login Screen](https://i.imgur.com/Rcc1l6T.png)
 
+#### Recover Password
+![Recover Password](https://i.imgur.com/9pmOxon.png)
+
 #### Admin Dashboard
-![Admin Dashboard](./screenshots/admin_dashboard.png)
+![Admin Dashboard](https://i.imgur.com/ZxwI2r4.png)
+
+#### Manage Users
+![Manage Users](https://i.imgur.com/qBWihdY.png)
+
+#### Manage Cars
+![Manage Cars](https://i.imgur.com/XWCwtXx.png)
 
 #### Customer Dashboard
-![Customer Dashboard](./screenshots/customer_dashboard.png)
+![Customer Dashboard](https://i.imgur.com/PDPpbRe.png)
+
+#### Search for a car
+![Search for a car](https://i.imgur.com/nxZku1i.png)
+
+#### Book a car form
+![Book a car form](https://i.imgur.com/y7gmBNx.png)
+
+#### View current bookings
+![View current bookings](https://i.imgur.com/HC0HNBr.png)
