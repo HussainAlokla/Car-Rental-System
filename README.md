@@ -92,7 +92,7 @@ The system is built using a layered architecture:
         ```bash
         SOURCE path_to_database.sql;
         ```
-        Replace `path_to_database.sql` with the actual path to the `database.sql` file provided in the project.
+        Replace `Car-Rental-System/DataBase/car_rental_system.sql` with the actual path to the `database.sql` file provided in the project.
 
    - Update the database connection details in `config.properties`:
      1. Navigate to the `resources` directory in your project.
@@ -157,7 +157,7 @@ The system is built using a layered architecture:
 ### Screenshots
 
 #### Login and Authentication
-![Login Screen](./screenshots/login_screen.png)
+![Login Screen]([./screenshots/login_screen.png](https://i.imgur.com/Rcc1l6T.png))
 
 #### Admin Dashboard
 ![Admin Dashboard](./screenshots/admin_dashboard.png)
