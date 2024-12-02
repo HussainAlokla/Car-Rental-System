@@ -157,7 +157,7 @@ The system is built using a layered architecture:
 ### Screenshots
 
 #### Login and Authentication
-![Login Screen](https://i.imgur.com/Rcc1l6T.png)
+![Login Screen](https://i.imgur.com/FvHG9os.png)
 
 #### Recover Password
 ![Recover Password](https://i.imgur.com/9pmOxon.png)
@@ -182,3 +182,9 @@ The system is built using a layered architecture:
 
 #### View current bookings
 ![View current bookings](https://i.imgur.com/HC0HNBr.png)
+
+#### Staff Dashboard
+![Admin Dashboard](https://i.imgur.com/L2tdXFK.jpeg)
+
+#### Manage Bookings
+![Admin Dashboard](https://i.imgur.com/oEYHJUw.jpeg)
