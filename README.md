@@ -157,7 +157,7 @@ The system is built using a layered architecture:
 ### Screenshots
 
 #### Login and Authentication
-![Login Screen](https://i.imgur.com/FvHG9os.png)
+![Login Screen](https://i.imgur.com/BpoHmYY.png)
 
 #### Recover Password
 ![Recover Password](https://i.imgur.com/9pmOxon.png)
